@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/utils";
+
 // ============================================================================
 // Profile Data — MarcusLab
 // ============================================================================
@@ -43,7 +45,7 @@ export const profile: ProfileData = {
     "Outside the editor, anime keeps the imagination charged. One Piece is the favourite — its spirit of adventure, curiosity and a good crew is a big part of the energy behind MarcusLab.",
   ],
 
-  portrait: "/images/character/avatar.jpg",
+  portrait: assetPath("/images/character/avatar.jpg"),
   portraitAlt:
     "MarcusLab avatar — anime-inspired pirate adventurer with straw hat",
   portraitNote: "AI-generated avatar",

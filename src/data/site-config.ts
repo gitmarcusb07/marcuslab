@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/utils";
+
 // ============================================================================
 // Site Configuration — MarcusLab
 // ============================================================================
@@ -80,7 +82,7 @@ const hero: HeroConfig = {
   secondaryCta: { label: "Get to Know Me", href: "#about" },
   character: {
     enabled: true,
-    image: "/images/character/avatar.jpg",
+    image: assetPath("/images/character/avatar.jpg"),
     alt: "MarcusLab avatar — anime-inspired pirate adventurer with straw hat",
     name: "Marcus Scout",
     label: "AI-generated avatar",

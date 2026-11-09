@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const AUDIO_SRC = "/audio/background-music.mp3";
+const AUDIO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/audio/background-music.mp3`;
 const TARGET_VOLUME = 0.32;
 /** The track starts 47 seconds in, so the intro is skipped. */
 const START_AT_SECONDS = 47;

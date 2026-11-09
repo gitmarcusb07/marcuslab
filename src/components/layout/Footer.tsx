@@ -6,7 +6,7 @@ import { Check, Copy, ExternalLink } from "lucide-react";
 import { getFooterCopyright, siteConfig } from "@/data/site-config";
 import { socials } from "@/data/socials";
 import { SocialIcon } from "@/components/ui/SocialIcon";
-import { copyToClipboard, scrollToSection } from "@/lib/utils";
+import { assetPath, copyToClipboard, scrollToSection } from "@/lib/utils";
 
 export default function Footer() {
   const [copied, setCopied] = useState<string | null>(null);
@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="mb-4 flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-[0.95rem] border border-navy/10 bg-white shadow-sm">
                 <Image
-                  src="/images/logo.png"
+                  src={assetPath("/images/logo.png")}
                   alt=""
                   width={44}
                   height={44}

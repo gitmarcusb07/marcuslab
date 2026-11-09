@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/data/site-config";
+import { assetPath } from "@/lib/utils";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -50,8 +51,8 @@ export const metadata: Metadata = {
   publisher: "MarcusLab",
   robots: "index, follow",
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: "/icon.svg",
+    icon: [{ url: assetPath("/icon.svg"), type: "image/svg+xml" }],
+    apple: assetPath("/icon.svg"),
   },
   appleWebApp: {
     capable: true,
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: ["/images/og-image.png"],
+    images: [assetPath("/images/og-image.png")],
   },
   alternates: {
     canonical: siteConfig.url,

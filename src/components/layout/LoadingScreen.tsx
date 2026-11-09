@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/utils";
 
 const BRAND = "MARCUSLAB.";
 
@@ -37,7 +38,7 @@ export default function LoadingScreen() {
           />
           <span className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-[1.35rem] border border-paper/20 bg-paper/10 p-1 shadow-[0_20px_50px_-18px_rgba(0,0,0,0.8)]">
             <Image
-              src="/images/logo.png"
+              src={assetPath("/images/logo.png")}
               alt=""
               width={74}
               height={74}

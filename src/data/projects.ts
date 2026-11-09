@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/utils";
+
 // ============================================================================
 // Projects Data — MarcusLab
 // ============================================================================
@@ -83,7 +85,7 @@ export const projects: Project[] = [
     statusLabel: "Live",
     preview: {
       kind: "image",
-      src: "/images/projects/hikmah-noor.png",
+      src: assetPath("/images/projects/hikmah-noor.png"),
       alt: "Screenshot of the Hikmah Noor website homepage",
       note: "Live site preview",
     },
@@ -117,7 +119,7 @@ export const projects: Project[] = [
     statusLabel: "Live",
     preview: {
       kind: "image",
-      src: "/images/projects/marcivo.png",
+      src: assetPath("/images/projects/marcivo.png"),
       alt: "Screenshot of the Marcivo website homepage",
       note: "Live site preview",
     },
@@ -151,9 +153,9 @@ export const projects: Project[] = [
     statusLabel: "Published",
     preview: {
       kind: "phone",
-      src: "/images/projects/quran-wall-screen.png",
+      src: assetPath("/images/projects/quran-wall-screen.png"),
       alt: "Quran Wall app home screen showing Quran verse wallpapers",
-      icon: "/images/projects/quran-wall-icon.png",
+      icon: assetPath("/images/projects/quran-wall-icon.png"),
       note: "Real app screen",
     },
     links: [
@@ -186,9 +188,9 @@ export const projects: Project[] = [
     statusLabel: "In Progress",
     preview: {
       kind: "phone",
-      src: "/images/projects/watch-later-screen.png",
+      src: assetPath("/images/projects/watch-later-screen.png"),
       alt: "Watch Later app home screen with continue watching and watchlist",
-      icon: "/images/projects/watch-later-icon.png",
+      icon: assetPath("/images/projects/watch-later-icon.png"),
       note: "Real app screen",
     },
     links: [],

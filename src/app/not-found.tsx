@@ -8,7 +8,7 @@ import CustomCursor from "@/components/layout/CustomCursor";
 import BackToTop from "@/components/layout/BackToTop";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { copyToClipboard } from "@/lib/utils";
+import { assetPath, copyToClipboard } from "@/lib/utils";
 
 export default function NotFound() {
   const [copied, setCopied] = useState(false);
@@ -29,7 +29,7 @@ export default function NotFound() {
         <div className="mx-auto max-w-xl text-center">
           <div className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-orange/30 bg-orange/5 mb-6">
             <Image
-              src="/images/logo.png"
+              src={assetPath("/images/logo.png")}
               alt="MarcusLab logo"
               width={40}
               height={40}

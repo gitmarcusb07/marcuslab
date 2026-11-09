@@ -2,6 +2,18 @@
  * Small shared utilities for MarcusLab.
  */
 
+/**
+ * Deployment basePath (empty locally, `/marcuslab` on the GitHub Pages build).
+ * `next/image` and metadata URLs do not inherit the basePath in a static
+ * export, so files in /public are resolved through `assetPath`.
+ */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Resolve a /public file against the deployment basePath. */
+export function assetPath(path: string): string {
+  return `${BASE_PATH}${path}`;
+}
+
 type ClassValue = string | number | null | undefined | false;
 
 /** Conditionally join class names. */

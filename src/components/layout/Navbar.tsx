@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
-import { cn, scrollToSection } from "@/lib/utils";
+import { assetPath, cn, scrollToSection } from "@/lib/utils";
 
 const NAV_LINKS = siteConfig.navigation;
 const HOME_SECTION = "home";
@@ -124,7 +124,7 @@ export default function Navbar() {
                 )}
               >
                 <Image
-                  src="/images/logo.png"
+                  src={assetPath("/images/logo.png")}
                   alt=""
                   width={48}
                   height={48}

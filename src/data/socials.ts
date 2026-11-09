@@ -14,7 +14,8 @@ export type SocialPlatform =
   | "discord"
   | "instagram"
   | "spotify"
-  | "moctale";
+  | "moctale"
+  | "googleplay";
 
 export interface SocialLink {
   platform: SocialPlatform;
@@ -93,6 +94,15 @@ export const socials: SocialLink[] = [
     description: "Discovering movies, shows and what to watch next.",
     accent: "#FF791F",
     ariaLabel: "Visit Marcus on Moctale",
+  },
+  {
+    platform: "googleplay",
+    name: "Google Play",
+    username: "MarcusLab",
+    url: "https://play.google.com/store/apps/dev?id=6840176356065063362",
+    description: "Android apps by MarcusLab on Google Play.",
+    accent: "#01875F",
+    ariaLabel: "Visit MarcusLab on Google Play",
   },
 ];
 

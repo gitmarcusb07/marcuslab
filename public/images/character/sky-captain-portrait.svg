@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="skyCaptainPortraitTitle skyCaptainPortraitDesc">
+  <title id="skyCaptainPortraitTitle">MarcusLab Portrait — The Sky Captain</title>
+  <desc id="skyCaptainPortraitDesc">Original illustrated portrait of the Sky Captain — an anime-inspired adventurer with silver hair, aviation goggles, and an orange scarf.</desc>
+  <defs>
+    <linearGradient id="skinP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD9B8"/>
+      <stop offset="0.55" stop-color="#F3C39C"/>
+      <stop offset="1" stop-color="#DCA277"/>
+    </linearGradient>
+    <linearGradient id="skinShadowP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0A87F"/>
+      <stop offset="1" stop-color="#C98D68"/>
+    </linearGradient>
+    <linearGradient id="hairP" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.38" stop-color="#DCE7F3"/>
+      <stop offset="0.7" stop-color="#A9BDD3"/>
+      <stop offset="1" stop-color="#6E87A3"/>
+    </linearGradient>
+    <linearGradient id="hairShadowP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8FA7BF"/>
+      <stop offset="1" stop-color="#5A7592"/>
+    </linearGradient>
+    <linearGradient id="scarfP" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FFA45F"/>
+      <stop offset="0.4" stop-color="#FF791F"/>
+      <stop offset="1" stop-color="#D95008"/>
+    </linearGradient>
+    <linearGradient id="scarfLightP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD0A8"/>
+      <stop offset="0.5" stop-color="#FF9A4A"/>
+      <stop offset="1" stop-color="#F26A11"/>
+    </linearGradient>
+    <linearGradient id="lensP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8DC7FF"/>
+      <stop offset="0.45" stop-color="#168BFF"/>
+      <stop offset="0.75" stop-color="#FF791F"/>
+      <stop offset="1" stop-color="#FFD0A8"/>
+    </linearGradient>
+    <linearGradient id="coatP" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#223C5A"/>
+      <stop offset="0.5" stop-color="#172B43"/>
+      <stop offset="1" stop-color="#0D1A2A"/>
+    </linearGradient>
+    <linearGradient id="coatLightP" x1="0" y1="0" x2="1" y2="0.7">
+      <stop offset="0" stop-color="#34557A"/>
+      <stop offset="1" stop-color="#172B43"/>
+    </linearGradient>
+    <linearGradient id="shirtP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F9FC"/>
+      <stop offset="1" stop-color="#C9D8E8"/>
+    </linearGradient>
+    <linearGradient id="metalP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F9FC"/>
+      <stop offset="0.4" stop-color="#A9BDD3"/>
+      <stop offset="1" stop-color="#73849A"/>
+    </linearGradient>
+    <radialGradient id="irisP" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#BFE2FF"/>
+      <stop offset="0.4" stop-color="#168BFF"/>
+      <stop offset="1" stop-color="#0A4C91"/>
+    </radialGradient>
+    <radialGradient id="auraP" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF791F" stop-opacity="0.28"/>
+      <stop offset="0.6" stop-color="#168BFF" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#168BFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlowP" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="300" cy="300" r="260" fill="url(#auraP)"/>
+
+  <!-- back scarf ribbons -->
+  <path d="M360 372 C 400 406 430 442 474 464 C 504 482 524 474 532 460 C 514 510 478 524 436 508 C 398 494 372 460 352 426 Z" fill="url(#scarfP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M498 466 C 522 468 532 462 540 454" fill="none" stroke="#FFD0A8" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <path d="M240 370 C 204 400 178 436 144 448 C 120 458 98 446 88 428 C 94 484 134 510 176 494 C 216 480 242 452 262 426 Z" fill="url(#scarfP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M98 456 C 80 460 72 452 68 440" fill="none" stroke="#FFD0A8" stroke-width="6" stroke-linecap="round" opacity="0.68"/>
+
+  <!-- coat -->
+  <path d="M110 600 C 116 500 148 436 236 402 L 260 382 C 276 398 316 398 334 382 L 364 402 C 452 436 484 500 490 600 Z" fill="url(#coatP)" stroke="#101C2D" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M136 600 C 146 524 172 466 236 422" fill="none" stroke="#34557A" stroke-width="7" stroke-linecap="round" opacity="0.58"/>
+  <path d="M464 600 C 454 524 428 466 364 422" fill="none" stroke="#34557A" stroke-width="7" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- inner shirt -->
+  <path d="M260 382 L 286 362 L 292 410 L 298 362 L 334 382 L 318 424 L 304 450 L 286 424 Z" fill="url(#shirtP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M286 376 L 292 410 L 298 376" fill="none" stroke="#AFC4D8" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- coat lapels -->
+  <path d="M260 382 L 230 338 L 286 368 L 304 402 Z" fill="url(#coatLightP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M334 382 L 370 338 L 314 368 L 304 402 Z" fill="url(#coatLightP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M244 354 L 286 374 L 294 394" fill="none" stroke="#FF791F" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M356 354 L 314 374 L 306 394" fill="none" stroke="#FF791F" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- neck -->
+  <path d="M264 292 C 262 322 268 350 292 362 C 316 350 322 322 320 292 Z" fill="url(#skinP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M266 300 C 274 330 280 344 292 354 C 304 344 310 330 318 300 C 310 320 302 328 292 330 C 282 328 274 320 266 300 Z" fill="url(#skinShadowP)" opacity="0.72"/>
+
+  <!-- ears -->
+  <path d="M230 212 C 214 200 202 212 206 230 C 210 250 222 258 234 246 L 236 222 Z" fill="url(#skinP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M216 222 C 210 222 208 230 212 238" fill="none" stroke="#C98D68" stroke-width="4" stroke-linecap="round"/>
+  <path d="M370 212 C 386 200 398 212 394 230 C 390 250 378 258 366 246 L 364 222 Z" fill="url(#skinP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M384 222 C 390 222 392 230 388 238" fill="none" stroke="#C98D68" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- back hair -->
+  <path d="M300 60 C 248 58 206 84 196 128 L 172 116 L 192 166 L 166 170 L 198 194 L 178 224 L 220 220 C 222 172 252 138 300 134 C 348 138 378 172 380 220 L 422 224 L 402 192 L 434 170 L 408 166 L 428 116 L 406 128 C 394 84 352 60 300 60 Z" fill="url(#hairP)" stroke="#101C2D" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M208 166 C 196 192 192 220 200 244 L 212 232 C 206 206 210 184 220 168 Z" fill="url(#hairShadowP)" opacity="0.72"/>
+  <path d="M392 166 C 408 192 414 220 406 244 L 392 232 C 400 206 396 184 388 168 Z" fill="url(#hairShadowP)" opacity="0.72"/>
+  <path d="M224 136 C 248 106 280 92 314 94" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity="0.82"/>
+  <path d="M370 106 C 392 120 406 144 412 170" fill="none" stroke="#F7F9FC" stroke-width="6" stroke-linecap="round" opacity="0.52"/>
+
+  <!-- face -->
+  <path d="M232 202 C 230 150 258 104 300 100 C 342 100 370 150 368 202 C 366 240 358 274 342 298 C 330 316 318 330 300 336 C 282 330 270 316 258 298 C 242 274 234 240 232 202 Z" fill="url(#skinP)" stroke="#101C2D" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M258 298 C 270 316 282 330 300 336 C 318 330 330 316 342 298 C 330 310 318 318 300 324 C 282 318 270 310 258 298 Z" fill="url(#skinShadowP)" opacity="0.62"/>
+  <path d="M238 220 C 244 200 258 180 282 166" fill="none" stroke="#FFE2CA" stroke-width="10" stroke-linecap="round" opacity="0.52"/>
+  <path d="M362 228 C 360 248 354 266 344 282" fill="none" stroke="#C98D68" stroke-width="5" stroke-linecap="round" opacity="0.38"/>
+
+  <!-- cheek / nose / mouth -->
+  <path d="M250 266 C 258 276 266 280 276 282" fill="none" stroke="#D99B72" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <path d="M302 264 L 292 282 L 304 286" fill="none" stroke="#B87550" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M288 296 C 298 303 316 302 332 293" fill="none" stroke="#101C2D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M294 306 C 302 310 308 308 316 304" fill="none" stroke="#C98D68" stroke-width="4" stroke-linecap="round" opacity="0.58"/>
+
+  <!-- eyebrows -->
+  <path d="M248 220 C 260 212 276 210 290 216" fill="none" stroke="#34495F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M322 216 C 337 208 352 210 362 220" fill="none" stroke="#34495F" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- eyes -->
+  <path d="M248 242 C 257 228 278 226 290 236 C 280 252 260 256 248 242 Z" fill="#F7F9FC" stroke="#101C2D" stroke-width="6" stroke-linejoin="round"/>
+  <ellipse cx="270" cy="240" rx="9" ry="11" fill="url(#irisP)"/>
+  <ellipse cx="270" cy="240" rx="4" ry="6" fill="#0A2036"/>
+  <circle cx="268" cy="236" r="3" fill="#FFFFFF"/>
+  <path d="M248 240 C 258 228 274 224 286 232" fill="none" stroke="#101C2D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M322 238 C 335 224 352 228 362 242 C 350 256 332 252 322 238 Z" fill="#F7F9FC" stroke="#101C2D" stroke-width="6" stroke-linejoin="round"/>
+  <ellipse cx="342" cy="240" rx="9" ry="11" fill="url(#irisP)"/>
+  <ellipse cx="342" cy="240" rx="4" ry="6" fill="#0A2036"/>
+  <circle cx="340" cy="236" r="3" fill="#FFFFFF"/>
+  <path d="M324 236 C 333 226 350 228 360 236" fill="none" stroke="#101C2D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M256 234 C 260 232 266 230 270 232" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M328 234 C 334 230 340 230 344 232" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- front hair spikes -->
+  <path d="M300 98 C 264 104 242 128 230 166 C 222 192 222 216 228 234 L 244 220 L 244 250 L 264 230 L 270 258 L 286 230 C 284 200 292 172 314 154 C 310 174 316 198 330 214 L 336 186 L 352 214 L 360 180 C 364 158 352 130 332 114 C 324 106 312 100 300 98 Z" fill="url(#hairP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M244 146 C 252 128 266 116 282 110" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+  <path d="M234 170 L 226 198 L 238 192 L 236 212" fill="none" stroke="#8FA7BF" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M282 136 C 272 162 268 186 268 208" fill="none" stroke="#5A7592" stroke-width="5" stroke-linecap="round" opacity="0.32"/>
+  <path d="M326 136 C 336 156 340 174 338 192" fill="none" stroke="#5A7592" stroke-width="5" stroke-linecap="round" opacity="0.32"/>
+
+  <!-- side locks -->
+  <path d="M230 166 C 218 212 220 252 232 288 L 254 302 L 248 254 L 258 232 L 248 216 C 242 200 244 180 250 166 Z" fill="url(#hairP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M370 166 C 382 212 380 252 368 288 L 346 302 L 352 254 L 342 232 L 352 216 C 358 200 356 180 350 166 Z" fill="url(#hairP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M236 192 C 232 220 234 246 240 264" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.62"/>
+  <path d="M364 192 C 368 220 366 246 360 264" fill="none" stroke="#F7F9FC" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- goggles strap -->
+  <path d="M212 160 C 250 140 358 136 400 156" fill="none" stroke="#101C2D" stroke-width="22" stroke-linecap="round"/>
+  <path d="M216 159 C 252 142 358 138 396 157" fill="none" stroke="#73849A" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M382 150 L 394 146 L 398 156 L 386 162 Z" fill="url(#metalP)" stroke="#101C2D" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- goggles -->
+  <g transform="rotate(-3 300 160)">
+    <circle cx="254" cy="158" r="38" fill="#101C2D" opacity="0.55"/>
+    <circle cx="254" cy="156" r="36" fill="url(#lensP)" stroke="#101C2D" stroke-width="8"/>
+    <circle cx="254" cy="156" r="28" fill="#0D2845" stroke="#A9BDD3" stroke-width="6" opacity="0.9"/>
+    <path d="M236 166 C 246 178 264 180 274 168" fill="none" stroke="#FFB27A" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M240 144 C 248 136 262 132 272 134" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+    <circle cx="254" cy="156" r="38" fill="none" stroke="url(#metalP)" stroke-width="4" opacity="0.9"/>
+    <circle cx="348" cy="154" r="36" fill="#101C2D" opacity="0.55"/>
+    <circle cx="348" cy="152" r="34" fill="url(#lensP)" stroke="#101C2D" stroke-width="8"/>
+    <circle cx="348" cy="152" r="26" fill="#0D2845" stroke="#A9BDD3" stroke-width="6" opacity="0.9"/>
+    <path d="M330 164 C 340 176 354 178 362 166" fill="none" stroke="#FFB27A" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M334 142 C 342 134 352 132 362 134" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+    <circle cx="348" cy="152" r="38" fill="none" stroke="url(#metalP)" stroke-width="4" opacity="0.9"/>
+    <path d="M290 152 C 298 146 306 146 314 150" fill="none" stroke="#101C2D" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="296" cy="156" r="4" fill="#FF791F" stroke="#101C2D" stroke-width="2"/>
+    <circle cx="310" cy="154" r="4" fill="#168BFF" stroke="#101C2D" stroke-width="2"/>
+  </g>
+
+  <!-- scarf wrap -->
+  <path d="M250 344 C 270 370 326 372 350 342 C 362 358 364 374 356 390 C 334 418 266 418 244 390 C 234 374 238 358 250 344 Z" fill="url(#scarfP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M244 362 C 268 384 330 386 356 362" fill="none" stroke="#FFD0A8" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+  <path d="M262 380 C 284 394 318 394 344 378" fill="none" stroke="#C84A06" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- scarf tail over coat -->
+  <path d="M352 362 C 384 386 402 418 392 450 C 382 480 356 496 330 484 C 350 470 360 450 358 428 C 356 406 344 384 332 370 Z" fill="url(#scarfLightP)" stroke="#101C2D" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M350 386 C 366 408 372 430 366 450" fill="none" stroke="#FFE3C9" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <path d="M334 458 C 344 456 352 448 356 440" fill="none" stroke="#C84A06" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M246 362 C 230 394 220 428 226 456 L 246 442 C 242 420 248 400 258 384 Z" fill="url(#scarfP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M232 386 C 228 408 228 426 232 438" fill="none" stroke="#FFD0A8" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- coat seam -->
+  <path d="M300 450 L 300 600" fill="none" stroke="#0A1420" stroke-width="6"/>
+  <path d="M300 450 L 300 600" fill="none" stroke="#34557A" stroke-width="2" stroke-dasharray="10 12" opacity="0.7"/>
+  <path d="M164 520 C 200 506 238 500 272 502" fill="none" stroke="#34557A" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <path d="M436 520 C 400 506 362 500 328 502" fill="none" stroke="#34557A" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- epaulettes -->
+  <path d="M144 454 L 212 426 L 228 452 L 164 486 Z" fill="url(#coatLightP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M456 454 L 388 426 L 372 452 L 436 486 Z" fill="url(#coatLightP)" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M164 462 L 206 444" fill="none" stroke="#FF791F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M436 462 L 394 444" fill="none" stroke="#FF791F" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- belt -->
+  <path d="M184 536 C 242 522 358 522 416 536 L 412 572 C 356 558 244 558 188 572 Z" fill="#0D1A2A" stroke="#101C2D" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M188 544 C 256 532 352 532 412 544" fill="none" stroke="#34557A" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <rect x="276" y="532" width="48" height="40" rx="10" fill="url(#metalP)" stroke="#101C2D" stroke-width="6"/>
+  <path d="M300 538 L 304 550 L 316 554 L 304 558 L 300 570 L 296 558 L 284 554 L 296 550 Z" fill="#FF791F" stroke="#101C2D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- chest compass -->
+  <g transform="translate(300 480)">
+    <circle r="34" fill="#0D1A2A" stroke="#101C2D" stroke-width="6"/>
+    <circle r="26" fill="none" stroke="url(#metalP)" stroke-width="4"/>
+    <circle r="3" fill="#F7F9FC"/>
+    <path d="M0 -22 L 6 -6 L 22 0 L 6 6 L 0 22 L -6 6 L -22 0 L -6 -6 Z" fill="#FF791F" stroke="#101C2D" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M0 -14 L 3 -3 L 14 0 L 3 3 L 0 14 L -3 3 L -14 0 L -3 -3 Z" fill="#168BFF"/>
+    <circle r="3" fill="#F7F9FC"/>
+  </g>
+
+  <!-- coat pins -->
+  <circle cx="262" cy="510" r="6" fill="#FF791F" stroke="#101C2D" stroke-width="3"/>
+  <circle cx="338" cy="510" r="6" fill="#168BFF" stroke="#101C2D" stroke-width="3"/>
+
+  <!-- rim light -->
+  <path d="M232 202 C 230 152 256 108 300 102" fill="none" stroke="#8DC7FF" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <path d="M368 202 C 366 240 360 264 348 284" fill="none" stroke="#FFB27A" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <path d="M368 426 C 416 456 450 506 466 570" fill="none" stroke="#FFB27A" stroke-width="5" stroke-linecap="round" opacity="0.42"/>
+  <path d="M144 454 C 122 500 112 550 110 590" fill="none" stroke="#8DC7FF" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- floating sparks -->
+  <g filter="url(#softGlowP)">
+    <circle cx="120" cy="270" r="3" fill="#FF791F" opacity="0.9"/>
+    <circle cx="494" cy="220" r="2" fill="#168BFF" opacity="0.9"/>
+    <circle cx="524" cy="380" r="4" fill="#FFB27A" opacity="0.75"/>
+    <circle cx="84" cy="382" r="2" fill="#8DC7FF" opacity="0.8"/>
+    <path d="M492 312 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3 Z" fill="#FF791F" opacity="0.8"/>
+    <path d="M108 458 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 Z" fill="#168BFF" opacity="0.7"/>
+  </g>
+</svg>

@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local agent tooling
+/.agents/
+/skills-lock.json
+/.freebuff/
+
+# stray partial duplicate kept out of the build
+/c/

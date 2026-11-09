@@ -80,6 +80,12 @@ export const technologyCategories: TechnologyCategory[] = [
         url: "https://kotlinlang.org/",
         accent: "red",
       },
+      {
+        name: "Kotlin",
+        mark: "KT",
+        url: "https://kotlinlang.org/",
+        accent: "red",
+      },
     ],
   },
   {

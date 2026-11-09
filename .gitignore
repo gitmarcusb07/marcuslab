@@ -47,3 +47,5 @@ next-env.d.ts
 
 # stray partial duplicate kept out of the build
 /c/
+
+.vercel

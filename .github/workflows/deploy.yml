@@ -31,10 +31,9 @@ jobs:
         run: npm ci
 
       - name: Build static site
+        env:
+          NEXT_PUBLIC_BASE_PATH: /marcuslab
         run: npm run build
-
-      - name: Export static site
-        run: npx next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -46,15 +45,10 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{steps.deployment.outputs.page_url}}
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: out/
 
       - name: Deploy
         id: deployment

@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 
+export const dynamic = "force-static";
+
 export const alt = "MarcusLab — Building Ideas. Creating Possibilities.";
 export const size = {
   width: 1200,

@@ -33,10 +33,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Export static site
+        run: npx next export
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .next/
+          path: out/
 
   deploy:
     needs: build
@@ -51,7 +54,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .next/
+          path: out/
 
       - name: Deploy
         id: deployment

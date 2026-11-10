@@ -153,7 +153,7 @@ function ProjectCard({
   return (
     <Reveal
       delay={Math.min(index * 0.06, 0.18)}
-      className={cn("group relative h-full", isWide && "lg:col-span-2")}
+      className={cn("group relative h-full min-w-0", isWide && "lg:col-span-2")}
     >
       <TiltCard
         max={4.5}
@@ -161,15 +161,15 @@ function ProjectCard({
       >
         <div
           className={cn(
-            "project-card flex h-full flex-col",
-            isWide && "lg:grid lg:grid-cols-[1.08fr_0.92fr]",
+            "project-card flex w-full min-w-0 h-full flex-col",
+            isWide && "lg:grid lg:grid-cols-2",
           )}
         >
           {/* Preview */}
           <div
             className={cn(
-              "relative aspect-[16/11] overflow-hidden bg-navy/[0.04]",
-              isWide && "lg:min-h-[360px]",
+              "relative w-full min-w-0 aspect-[16/11] overflow-hidden bg-navy/[0.04]",
+              isWide && "lg:aspect-auto lg:h-full lg:min-h-80",
             )}
             data-cursor-label={
               project.links.length > 0 ? "Open project" : "Preview"
@@ -235,7 +235,7 @@ function ProjectCard({
           {/* Content */}
           <div
             className={cn(
-              "flex flex-1 flex-col p-5 sm:p-6",
+              "flex w-full min-w-0 flex-1 flex-col p-5 sm:p-6",
               isWide && "lg:justify-center lg:p-8 xl:p-9",
             )}
           >
@@ -360,19 +360,7 @@ function PhoneMockup({
             />
           </div>
 
-          <div
-            aria-hidden="true"
-            className="absolute -left-3 -top-3 flex h-11 w-11 items-center justify-center overflow-hidden rounded-[0.9rem] border border-white/25 bg-navy shadow-[0_14px_30px_-10px_rgba(0,0,0,0.87)]"
-          >
-            <Image
-              src={preview.icon}
-              alt=""
-              width={44}
-              height={44}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </div>))}
+          </div>))}
 
       {preview.note ? (
         <span className="mono absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-navy/50 px-2.5 py-1 text-[0.42rem] tracking-[0.12em] text-paper/45 backdrop-blur-sm">

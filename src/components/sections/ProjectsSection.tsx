@@ -343,10 +343,9 @@ function PhoneMockup({
         }}
       />
 
-      <div className="relative">
-        <div className="phone-device relative flex h-[86%] max-h-[330px] aspect-[9/18.5] flex-col overflow-hidden rounded-[1.55rem] border border-white/20 bg-navy p-[3px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.85)]">
+      <div className="phone-device relative flex h-[86%] max-h-[330px] aspect-[9/18.5] flex-col overflow-hidden rounded-[1.55rem] border border-white/20 bg-navy p-[3px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.85)]">
           <div className="relative flex-1 overflow-hidden rounded-[1.32rem] bg-navy-deep">
-            <Image
+            <Image>
               src={preview.src}
               alt={preview.alt}
               fill
@@ -358,21 +357,20 @@ function PhoneMockup({
               className="pointer-events-none absolute inset-0 rounded-[1.32rem] bg-gradient-to-t from-navy/25 via-transparent to-white/[0.06] ring-1 ring-inset ring-white/10"
             />
           </div>
-        </div>
 
-        <div
-          aria-hidden="true"
-          className="absolute -left-3 -top-3 flex h-11 w-11 items-center justify-center overflow-hidden rounded-[0.9rem] border border-white/25 bg-navy shadow-[0_14px_30px_-10px_rgba(0,0,0,0.87)]"
-        >
-          <Image
-            src={preview.icon}
-            alt=""
-            width={44}
-            height={44}
-            className="h-full w-full object-cover"
-          />
+          <div
+            aria-hidden="true"
+            className="absolute -left-3 -top-3 flex h-11 w-11 items-center justify-center overflow-hidden rounded-[0.9rem] border border-white/25 bg-navy shadow-[0_14px_30px_-10px_rgba(0,0,0,0.87)]"
+          >
+            <Image
+              src={preview.icon}
+              alt=""
+              width={44}
+              height={44}
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
-      </div>
 
       {preview.note ? (
         <span className="mono absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-navy/50 px-2.5 py-1 text-[0.42rem] tracking-[0.12em] text-paper/45 backdrop-blur-sm">

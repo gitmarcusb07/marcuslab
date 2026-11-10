@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   publisher: "MarcusLab",
   robots: "index, follow",
   icons: {
-    icon: [{ url: assetPath("/icon.svg"), type: "image/svg+xml" }],
-    apple: assetPath("/icon.svg"),
+    icon: [{ url: assetPath("/icon.png"), type: "image/png" }],
+    apple: assetPath("/icon.png"),
   },
   appleWebApp: {
     capable: true,

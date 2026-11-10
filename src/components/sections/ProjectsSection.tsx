@@ -345,7 +345,7 @@ function PhoneMockup({
 
       <div className="phone-device relative flex h-[86%] max-h-[330px] aspect-[9/18.5] flex-col overflow-hidden rounded-[1.55rem] border border-white/20 bg-navy p-[3px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.85)]">
           <div className="relative flex-1 overflow-hidden rounded-[1.32rem] bg-navy-deep">
-            <Image>
+            <Image
               src={preview.src}
               alt={preview.alt}
               fill

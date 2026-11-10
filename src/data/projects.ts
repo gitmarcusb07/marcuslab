@@ -38,6 +38,7 @@ export interface ProjectPreviewPhone {
   src: string;
   alt: string;
   icon: string;
+    screens?: { src: string; alt: string };[];
   note?: string;
 }
 
@@ -153,10 +154,10 @@ export const projects: Project[] = [
     statusLabel: "Published",
     preview: {
       kind: "phone",
-      src: assetPath("/images/projects/quran-wall-screen.png"),
-      alt: "Redesigned Quran Wall home screen showing verse wallpapers in English",
+      src: assetPath("/images/projects/quran-wall-home-arabic.jpg"),
+      alt: "Real Quran Wall home screen",
       icon: assetPath("/images/projects/quran-wall-icon.png"),
-      note: "Redesigned home screen",
+      note: "REAL APP SCREEN", screens: [{ src: assetPath("/images/projects/quran-wall-home-arabic.jpg"), alt: "Real Quran Wall home screen" }, { src: assetPath("/images/projects/quran-wall-edit.jpg"), alt: "Real Quran Wall edit wallpaper screen" }],
     },
     links: [
       {

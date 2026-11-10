@@ -324,9 +324,9 @@ function PhoneMockup({
 }: {
   preview: ProjectPreviewPhone;
   accent: string;
-  const screens = preview.screens && preview.screens.length > 0 ? preview.screens : [{ src: preview.src, alt: preview.alt }];
-    const dual = screens.length > 1;
 }) {
+  const screens = preview.screens && preview.screens.length > 0 ? preview.screens : [{ src: preview.src, alt: preview.alt }];
+  const dual = screens.length > 1;
   return (
     <div className="phone-stage relative flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-[radial-gradient(circle_at_50%_35%,#1c3450_0%,#0a1420_75%)] px-5 py-5">
       <div

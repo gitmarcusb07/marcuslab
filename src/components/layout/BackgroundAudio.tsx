@@ -4,10 +4,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { VolumeX } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const AUDIO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/audio/background-music.mp3`;
+const AUDIO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/audio/highest-in-the-room.mp3`;
 const TARGET_VOLUME = 0.32;
-/** The track starts 47 seconds in, so the intro is skipped. */
-const START_AT_SECONDS = 47;
+/** The track starts from the beginning. */
+const START_AT_SECONDS = 0;
 
 /**
  * One audio element, one source of truth.
@@ -23,8 +23,8 @@ const START_AT_SECONDS = 47;
  *     page unmutes the already-running track instantly, without touching the
  *     music button.
  *  4. The floating control remains available for pausing and resuming.
- *  5. Playback starts at the 47-second cue and loops back to it, skipping the
- *     intro every time.
+ *  5. Playback starts from the beginning and loops back to the beginning
+ *     every time.
  */
 export default function BackgroundAudio() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -72,14 +72,14 @@ export default function BackgroundAudio() {
     return !!audio && !audio.paused && !audio.muted && !audio.ended;
   }, []);
 
-  /** Respect very short replacement tracks while defaulting to the 47s cue. */
+  /** Respect very short replacement tracks while defaulting to the start. */
   const getStartTime = useCallback(() => {
     const duration = audioRef.current?.duration;
     if (!duration || !Number.isFinite(duration)) return START_AT_SECONDS;
     return duration > START_AT_SECONDS + 2 ? START_AT_SECONDS : 0;
   }, []);
 
-  /* Seek to the 47-second cue once the file can accept a currentTime. */
+  /* Seek to the beginning once the file can accept a currentTime. */
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -225,7 +225,7 @@ export default function BackgroundAudio() {
       attachGestureListeners();
     };
 
-    /* Loop from the 47-second cue instead of returning to the intro. */
+    /* Loop from the beginning. */
     const onEnded = () => {
       if (userPaused.current) return;
       const current = audioRef.current;

@@ -104,12 +104,13 @@ export const siteConfig: SiteConfig = {
     builtWith: "Next.js · Three.js · TypeScript · Tailwind CSS",
   },
   seo: {
-    title: "Marcus Scout — Building Ideas. Creating Possibilities.",
+    title: "MarcusLab — Marcus Scout | Building Ideas. Creating Possibilities.",
     description:
-      "The digital universe of Marcus Scout — a developer and creator building websites, Android applications, 3D experiences and AI experiments. Explore live projects, the real stacks behind them and the story beyond the code.",
+      "MarcusLab (Marcus Lab) is the portfolio of Marcus Scout — a developer and creator building websites, Android apps, 3D experiences and AI experiments. Explore live projects, the real stacks behind them and the story beyond the code.",
     keywords: [
       "MarcusLab",
       "Marcus Scout",
+      "Marcus Lab",
       "Marcus",
       "developer portfolio",
       "creative developer",

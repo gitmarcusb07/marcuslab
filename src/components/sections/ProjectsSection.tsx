@@ -324,9 +324,11 @@ function PhoneMockup({
 }: {
   preview: ProjectPreviewPhone;
   accent: string;
+  const screens = preview.screens && preview.screens.length > 0 ? preview.screens : [{ src: preview.src, alt: preview.alt }];
+    const dual = screens.length > 1;
 }) {
   return (
-    <div className="phone-stage relative flex h-full w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_35%,#1c3450_0%,#0a1420_75%)] px-5 py-5">
+    <div className="phone-stage relative flex h-full w-full items-center justify-center gap-3 overflow-hidden bg-[radial-gradient(circle_at_50%_35%,#1c3450_0%,#0a1420_75%)] px-5 py-5">
       <div
         aria-hidden="true"
         className="absolute -left-10 top-6 h-32 w-32 rounded-full opacity-30"
@@ -343,11 +345,11 @@ function PhoneMockup({
         }}
       />
 
-      <div className="phone-device relative flex h-[86%] max-h-[330px] aspect-[9/18.5] flex-col overflow-hidden rounded-[1.55rem] border border-white/20 bg-navy p-[3px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.85)]">
+      {screens.map((screen) => (<div key={screen.src} className={"phone-device relative flex " + (dual ? "h-[58%] max-h-[208px]" : "h-[86%] max-h-[330px]") + " aspect-[9/18.5] flex-col overflow-hidden rounded-[1.55rem] border border-white/20 bg-navy p-[3px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.85)]"}>
           <div className="relative flex-1 overflow-hidden rounded-[1.32rem] bg-navy-deep">
             <Image
-              src={preview.src}
-              alt={preview.alt}
+              src={screen.src}
+              alt={screen.alt}
               fill
               sizes="(max-width: 640px) 34vw, 170px"
               className="object-cover object-top"
@@ -370,7 +372,7 @@ function PhoneMockup({
               className="h-full w-full object-cover"
             />
           </div>
-        </div>
+        </div>))}
 
       {preview.note ? (
         <span className="mono absolute bottom-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-navy/50 px-2.5 py-1 text-[0.42rem] tracking-[0.12em] text-paper/45 backdrop-blur-sm">

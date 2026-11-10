@@ -38,7 +38,7 @@ export interface ProjectPreviewPhone {
   src: string;
   alt: string;
   icon: string;
-    screens?: { src: string; alt: string };[];
+    screens?: { src: string; alt: string }[];
   note?: string;
 }
 

@@ -40,7 +40,7 @@ export const profile: ProfileData = {
     "A builder at heart — happiest when an idea is moving from a sketch to something people can actually open, use and enjoy.",
 
   bio: [
-    "I’m Marcus Scout — a developer and creator who likes taking an idea, turning it around, and shaping it into something real. That can be a website, an app, a game experiment, or a small piece of the internet that didn’t exist yesterday.",
+    "I’m Marcus Scout — a developer and creator who likes taking an idea, turning it around, and shaping it into something real. That can be a website, an app, a game experiment, or a small piece of the internet that didn’t exist yesterday. MarcusLab (also searched as Marcus Lab) is where those builds live.",
     "My playground sits where technology and creativity meet: web experiences built with Next.js, React and Astro; Android applications built with React Native and Expo; and a growing pile of experiments around 3D, motion and AI. Some of those ideas are live, some are still notes on a screen, and the space between the two is the part I love most.",
     "Outside the editor, anime keeps the imagination charged. One Piece is the favourite — its spirit of adventure, curiosity and a good crew is a big part of the energy behind MarcusLab.",
   ],

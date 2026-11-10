@@ -169,7 +169,7 @@ function ProjectCard({
           <div
             className={cn(
               "relative aspect-[16/11] overflow-hidden bg-navy/[0.04]",
-              isWide && "lg:aspect-auto lg:h-full lg:min-h-[360px]",
+              isWide && "lg:min-h-[360px]",
             )}
             data-cursor-label={
               project.links.length > 0 ? "Open project" : "Preview"

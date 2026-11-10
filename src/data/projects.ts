@@ -154,9 +154,9 @@ export const projects: Project[] = [
     preview: {
       kind: "phone",
       src: assetPath("/images/projects/quran-wall-screen.png"),
-      alt: "Quran Wall app home screen showing Quran verse wallpapers",
+      alt: "Redesigned Quran Wall home screen showing verse wallpapers in English",
       icon: assetPath("/images/projects/quran-wall-icon.png"),
-      note: "Real app screen",
+      note: "Redesigned home screen",
     },
     links: [
       {
